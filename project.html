@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text.css" href="css/stylesheet.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="db.php">
+    <style>
+        .container {
+            background-color: rgb(233, 230, 230);
+            height: 1500px;
+            width: 1200px;
+        }
+        
+        .backbox {
+            background-image: url(Banner.png);
+            background-size: 1100px;
+            height: 600px;
+            width: 1100px;
+        }
+        
+        .text {
+            height: 150px;
+            width: 300px;
+            background-color: transparent;
+            position: absolute;
+            bottom: 20%;
+            color: white;
+            left: 60%;
+            font-size: 25px;
+            font-weight: bold;
+            margin: 10px;
+            text-align: right;
+        }
+        
+        .navbar-header {
+            background: black;
+            border-bottom: 1px solid black;
+            overflow: auto;
+            position: absolute;
+            background: transparent;
+            width: 1100px;
+        }
+        
+        .navbar-nav {
+            padding: 0 0 20px;
+            display: block;
+        }
+        
+        .navbar-nav li {
+            float: left;
+        }
+        
+        .logo img {
+            width: 200px;
+            margin: 5px auto;
+        }
+        
+        .navbar-nav a {
+            display: block;
+            padding: 20px 15px;
+            text-decoration: none;
+            font-family: Arial;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .navbar-nav a:hover {
+            color: yellow;
+        }
+        
+        .navbar-right {
+            float: right;
+        }
+        
+        .box {
+            height: 800px;
+            width: 1100px;
+            background: white;
+        }
+        
+        .innerbox {
+            width: 850px;
+            height: 320px;
+            background: rgb(8, 8, 32);
+            position: absolute;
+            top: 105%;
+            left: 20%;
+        }
+        
+        .innerbox img {
+            height: 200px;
+            width: 170px;
+            margin: 40px;
+            margin-top: 80px;
+            float: right;
+        }
+        
+        p {
+            color: white;
+            margin-left: 70px;
+            margin-top: 50px;
+            margin-bottom: 0px;
+        }
+        
+        h5 {
+            color: white;
+            margin-left: 70px;
+            margin-bottom: 0px;
+        }
+        
+        h6 {
+            color: royalblue;
+            font-size: 20px;
+            margin-left: 70px;
+            margin-bottom: 0px;
+        }
+        
+        .statement {
+            background: transparent;
+            width: 500px;
+            height: auto;
+            margin-top: 10px;
+            text-align: left;
+        }
+        
+        .smbox1 {
+            background-color: transparent;
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            margin: 10px 60px;
+            top: 170%;
+            left: 15%;
+        }
+        
+        .smbox1 img {
+            height: 300px;
+            width: 300px;
+            border: 1px solid #000;
+        }
+        
+        .smbox1 p {
+            color: red;
+            position: absolute;
+            bottom: 90%;
+            font-weight: 900;
+        }
+        
+        .btn1 {
+            background: transparent;
+            position: absolute;
+            top: 40px;
+            left: 30px;
+            border: 2px solid red;
+            font-weight: 700;
+        }
+        
+        .smbox2 {
+            height: 200px;
+            width: 400px;
+            margin: 10px 10px;
+            top: 170%;
+            left: 50%;
+            position: absolute;
+        }
+        
+        .smbox2 img {
+            height: 150px;
+            width: 400px;
+            border: 1px solid #000;
+        }
+        
+        .smbox2 p {
+            color: red;
+            position: absolute;
+            bottom: 85%;
+            font-weight: 900;
+        }
+        
+        .smbox3 {
+            height: 200px;
+            width: 400px;
+            margin: 10px 10px;
+            top: 195%;
+            left: 50%;
+            position: absolute;
+            margin: 10px;
+        }
+        
+        .smbox3 img {
+            height: 150px;
+            width: 400px;
+            border: 1px solid #000;
+        }
+        
+        .smbox3 p {
+            color: red;
+            position: absolute;
+            bottom: 85%;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class=" container ">
+        <div class="logo">
+            <a href="#"><img src="logo.png"> </a>
+
+        </div>
+        <div class="navbar-header">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Client</a></li>
+                <li><a href="#">Work With Us</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+
+
+        </div>
+        <div class=" backbox">
+            <p class="text">
+                Support By A Nationwide Network of 250+ Distributors
+            </p>
+        </div>
+        <div class="box">
+            <div class="innerbox">
+                <img src="inner.jpg">
+                <p>Manage Statistics</p>
+                <h5>Working efficiency and popularity</h5>
+                <h6>___________</h6>
+                <p class="statement">
+                    DOWEII'S Electro Wher has many achievements to its credit. It manufactured plant type contact switches for the first time in india in 1961. It later diversified into electrical connection and development 5,000 type of terminals and joint assecories. It
+                    also exported cable terminals,connectors for copper and aluminium conductor and hand operated hydraulic crimpring tools, as well as non-ferrous metal semis like copper and aluminium flats, strips, rods, tubes Etc.
+                </p>
+            </div>
+            <div class="smbox1">
+                <img src="ct.jpg">
+                <p> CRIMPING TOOLS</p>
+                <button class="btn1" type="button"> View More -></button>
+            </div>
+            <div class="smbox2">
+                <img src="terminal.jpg">
+                <p>CABLE CONNECTORS</p>
+                <button class="btn1" type="button"> View More -></button>
+            </div>
+            <div class="smbox3">
+                <img src="connectors.jpg">
+                <p>CABLE LUGS</p>
+                <button class="btn1" type="button"> View More -></button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
